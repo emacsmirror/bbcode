@@ -1,11 +1,10 @@
 ;;; bbcode-mode.el --- a major-mode for editing bbcode
 ;;
-;; Copyright 2011 Florian Kaufmann <sensorflo@gmail.com>
+;; Copyright 2011-2012 Florian Kaufmann <sensorflo@gmail.com>
 ;;
 ;; Author: Florian Kaufmann <sensorflo@gmail.com>
-;; URL: http://sensorflo-emacs.googlecode.com/svn/trunk/bbcode-mode.el
+;; URL: http://code.google.com/p/bbcode-mode/
 ;; Created: 2011
-;; Version: 0.1
 ;; Keywords: wp bbcode
 ;; 
 ;; This file is not part of GNU Emacs.

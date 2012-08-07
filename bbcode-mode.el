@@ -1,5 +1,6 @@
 ;;; bbcode-mode.el --- a major-mode for editing bbcode
 ;;
+;;
 ;; Copyright 2011-2012 Florian Kaufmann <sensorflo@gmail.com>
 ;;
 ;; Author: Florian Kaufmann <sensorflo@gmail.com>

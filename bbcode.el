@@ -1,10 +1,10 @@
-;;; bbcode-mode.el --- a major-mode for editing bbcode
+;;; bbcode.el --- a major-mode for editing bbcode
 ;;
 ;;
 ;; Copyright 2011-2012 Florian Kaufmann <sensorflo@gmail.com>
 ;;
 ;; Author: Florian Kaufmann <sensorflo@gmail.com>
-;; URL: http://code.google.com/p/bbcode-mode/
+;; URL: https://github.com/sensorflo/bbcode
 ;; Created: 2011
 ;; Keywords: wp bbcode
 ;; 
@@ -32,9 +32,9 @@
 ;;; Variables: 
 
 (require 'outline)
-(require 'markup-faces)
+(require 'markup-faces) ; https://github.com/sensorflo/markup-faces
 
-(defvar bbcode-mode-hook nil
+(defvar bbcode-hook nil
   "Normal hook run when entering bbcode mode.")
 
 
@@ -87,7 +87,7 @@
    ;; misc
    (list "\\[linie\\]\\[/linie\\]" '(0 markup-replacement-face))
    )
-  "Keywords to highlight in bbcode-mode")
+  "Keywords to highlight in bbcode")
 
 (defun bbcode-re-paragraph-separate()
   (concat
@@ -111,9 +111,9 @@
    "\\)"))
 
 ;;;###autoload
-(define-derived-mode bbcode-mode text-mode "bbcode"
+(define-derived-mode bbcode text-mode "bbcode"
   "Major mode for viewing log files.
-Turning on bbcode mode runs the normal hook `bbcode-mode-hook'."
+Turning on bbcode mode runs the normal hook `bbcode-hook'."
   
   ;; pages
   ;; (set (make-local-variable 'page-delimiter) bbcode-re-page) 
@@ -144,9 +144,9 @@ Turning on bbcode mode runs the normal hook `bbcode-mode-hook'."
   ;; 	       (mapconcat 'identity (list bbcode-re-page bbcode-re-chapter bbcode-re-chapter-end) "\\|")
   ;; 	       "\\)"))
   ;; (set (make-local-variable 'outline-level) 'bbcode-outline-level)
-  ;; (run-hooks 'bbcode-mode-hook)
+  ;; (run-hooks 'bbcode-hook)
 )
 
-(provide 'bbcode-mode)
+(provide 'bbcode)
 
-;;; bbcode-mode.el ends here
+;;; bbcode.el ends here

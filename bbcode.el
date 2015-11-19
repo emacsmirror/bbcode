@@ -144,7 +144,6 @@ Turning on bbcode mode runs the normal hook `bbcode-hook'."
   ;; 	       (mapconcat 'identity (list bbcode-re-page bbcode-re-chapter bbcode-re-chapter-end) "\\|")
   ;; 	       "\\)"))
   ;; (set (make-local-variable 'outline-level) 'bbcode-outline-level)
-  ;; (run-hooks 'bbcode-hook)
 )
 
 (provide 'bbcode)
